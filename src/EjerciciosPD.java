@@ -5,14 +5,14 @@ public class EjerciciosPD {
     private Map<Integer, Integer> map = new HashMap<>();
 
     public Long getFibonaci(int n) {
-        if (n <= 1) 
+        if (n <= 1)
             return (long) n;
-        
+
         return getFibonaci(n - 1) + getFibonaci(n - 2);
     }
 
     public Long getFibonaciPD(int n) {
-        if (n <= 1) 
+        if (n <= 1)
             return (long) n;
 
         if (map.containsKey(n)) {
@@ -23,4 +23,5 @@ public class EjerciciosPD {
         map.put(n, (int) result);
         return result;
     }
+
 }
