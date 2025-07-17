@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class EjerciciosPD {
-    private Map<Integer, Integer> map = new HashMap<>();
+    private Map<Integer, Long> map = new HashMap<>();
 
     public Long getFibonaci(int n) {
         if (n <= 1)
@@ -20,7 +20,7 @@ public class EjerciciosPD {
         }
 
         long result = getFibonaciPD(n - 1) + getFibonaciPD(n - 2);
-        map.put(n, (int) result);
+        map.put(n, result);
         return result;
     }
 

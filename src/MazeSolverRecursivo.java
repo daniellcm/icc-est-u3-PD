@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class MaseSolverRecursivo implements MazeSolver {
+public class MazeSolverRecursivo implements MazeSolver {
 
     @Override
     public List<Cell> getPath(boolean[][] grid, Cell start, Cell end) {
@@ -26,7 +26,7 @@ public class MaseSolverRecursivo implements MazeSolver {
             return false;
         }
         // validar si es el final
-        if (row == end.row() && col == end.col()) {
+        if (row == end.row && col == end.col) {
             return true;
 
         }
