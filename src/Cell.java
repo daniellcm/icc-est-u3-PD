@@ -9,12 +9,10 @@ public class Cell {
 
     @Override
     public boolean equals(Object obj) {
-        if (this == obj)
-            return true;
-        if (!(obj instanceof Cell))
-            return false;
-        Cell cell = (Cell) obj;
-        return row == cell.row && col == cell.col;
+        if (this == obj) return true;
+        if (!(obj instanceof Cell)) return false;
+        Cell other = (Cell) obj;
+        return row == other.row && col == other.col;
     }
 
     @Override
@@ -24,6 +22,6 @@ public class Cell {
 
     @Override
     public String toString() {
-        return "Cell{" + "row=" + row + ", col=" + col + '}';
+        return "(" + row + ", " + col + ")";
     }
 }

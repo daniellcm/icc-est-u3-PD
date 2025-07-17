@@ -7,16 +7,16 @@ public class Maze {
     }
 
     public boolean[][] getGrid() {
-        return this.maze;
+    return this.maze;
     }
-
+    
     public void printMaze() {
         for (int i = 0; i < maze.length; i++) {
             for (int j = 0; j < maze[i].length; j++) {
                 if (maze[i][j]) {
-                    System.out.print("- ");
+                    System.out.print(" - ");
                 } else {
-                    System.out.print("* ");
+                    System.out.print(" * ");
                 }
             }
             System.out.println();

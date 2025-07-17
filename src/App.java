@@ -44,6 +44,7 @@ public class App {
 
         Cell start = new Cell(0, 0);
         Cell end = new Cell(3, 3);
+        System.out.println("Recursivo Completo");
 
         List<MazeSolver> solvers = Arrays.asList(
                 new MazeSolverRecursivo(),
