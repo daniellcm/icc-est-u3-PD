@@ -4,7 +4,7 @@ import java.util.List;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println(" -------------- Fibonacci --------------");
+        System.out.println(" -------------- Maze Recursivo --------------");
         System.out.println("Nombre: Daniel Cajas");
         System.out.println("----------------------------------------");
         // runEjerciciosPD();
